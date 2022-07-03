@@ -1,0 +1,18 @@
+﻿@page "/wonderland"
+@inherits LayoutComponentBase
+
+
+<AuthorizeView>
+    <Authorized>
+        <center>
+            <h3>Welcome to wonderland!!!</h3>
+            <img src="wwwroot/css/Images/photo.png"/>
+        </center>
+    </Authorized>
+
+<NotAuthorized>
+    <center>
+        <h2>To enter wonderland please Log in or register</h2>
+    </center>
+</NotAuthorized>
+</AuthorizeView>
